@@ -1,4 +1,15 @@
 package com.example.exercicioModulo3.dtos;
 
-public record AcaoSustentavelResponse() {
+import com.example.exercicioModulo3.enums.Categoria;
+
+import java.time.LocalDate;
+
+public record AcaoSustentavelResponse(
+        Long id,
+        String titulo,
+        String descricao,
+        Categoria categoria,
+        LocalDate dataRealizacao,
+        String responsavel
+) {
 }
