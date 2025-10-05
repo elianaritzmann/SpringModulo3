@@ -3,6 +3,7 @@ package com.example.exercicioModulo3.services;
 import com.example.exercicioModulo3.dtos.AcaoSustentavelRequest;
 import com.example.exercicioModulo3.dtos.AcaoSustentavelResponse;
 import com.example.exercicioModulo3.entities.AcaoSustentavel;
+import com.example.exercicioModulo3.errors.AcaoSustentavelNotFoundException;
 import com.example.exercicioModulo3.mappers.AcaoSustentavelMapper;
 import com.example.exercicioModulo3.repositories.AcaoSustentavelRepository;
 import lombok.AllArgsConstructor;
