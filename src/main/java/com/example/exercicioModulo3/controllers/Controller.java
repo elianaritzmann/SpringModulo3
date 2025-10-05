@@ -38,6 +38,13 @@ public class Controller {
         return ResponseEntity.ok("A ação "+id+" foi deletada com sucesso");
     }
 
+    @GetMapping("/filtro")
+    public ResponseEntity<List<AcaoSustentavelResponse>> filtrarPorCategoria(
+            @RequestParam String categoria) {
+
+        List<AcaoSustentavelResponse> lista = service.filtro(categoria);
+        return ResponseEntity.ok(lista);
+    }
 
 
 }
